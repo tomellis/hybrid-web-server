@@ -19,12 +19,8 @@ Simple puppet module to demonstrate that a puppet fact can affect web content.
 
 Using a cloud fact set to "eucalyptus":
 
-    ```
     FACTER_cloud=eucalyptus puppet apply -v --modulepath=/root/puppet -e "include web-server::init"
-    ```
 
 Using a cloud fact set to "aws":
 
-    ```
     FACTER_cloud=aws puppet apply -v --modulepath=/root/puppet -e "include web-server::init"
-    ```
